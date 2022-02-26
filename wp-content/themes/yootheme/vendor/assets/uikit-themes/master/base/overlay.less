@@ -1,0 +1,43 @@
+//
+// Component: Overlay
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+//
+// New
+//
+
+@overlay-backdrop-filter:                       ~'';
+
+
+// Component
+// ========================================================================
+
+.hook-overlay() when not (@overlay-backdrop-filter = ~'') {
+    backdrop-filter: @overlay-backdrop-filter;
+    -webkit-backdrop-filter: @overlay-backdrop-filter;
+}
+
+
+// Icon
+// ========================================================================
+
+.hook-overlay-icon() {}
+
+
+// Style modifiers
+// ========================================================================
+
+.hook-overlay-default() {}
+
+.hook-overlay-primary() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-overlay-misc() {}
